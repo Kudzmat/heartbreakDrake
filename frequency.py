@@ -1,8 +1,7 @@
-from clean_data import clean_lyrics
-from collections import Counter
+import pandas as pd
+import pprint
 
 
-def check_frequency():
-    word_frequency = {}
-    for lyrics in clean_lyrics:
-        word_frequency.update(Counter(lyrics))
+BB_ANGEL = pd.read_csv('tinashe/bb_angel.csv')
+
+print(BB_ANGEL['album'])
